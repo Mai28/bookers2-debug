@@ -1,0 +1,15 @@
+<%= form_for(book) do |f| %>
+	<div class="field row">
+		<%= f.label :title,class: "col-xs-10" %>
+		<%= f.text_field :title,class: "col-xs-10" %>
+	</div>
+
+	<div class="field row">
+		<%= f.label  :opinion, class: "col-xs-10" %> <!-- ここを変更 -->
+		<%= f.text_area :body,class: "col-xs-10" %>
+	</div>
+
+	<div class="actions row">
+		<%= f.submit class: "col-xs-10 btn btn-primary" %>
+	</div>
+<% end %>
